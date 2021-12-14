@@ -1,7 +1,7 @@
 use crate::utils;
 
-pub fn puzzel1() {
-    println!("Day 1, puzzel 1");
+pub fn puzzle1() {
+    println!("Day 1, puzzle 1");
 
     let input = utils::file::read_input("src/day1/input.txt");
     let string_array: Vec<&str> = input.split("\n").collect();
@@ -21,8 +21,8 @@ pub fn puzzel1() {
     println!("increases: {}", increases);
 }
 
-pub fn puzzel2() {
-    println!("Day 1, puzzel 2");
+pub fn puzzle2() {
+    println!("Day 1, puzzle 2");
 
     let input = utils::file::read_input("src/day1/input.txt");
     let string_array: Vec<&str> = input.split("\n").collect();
