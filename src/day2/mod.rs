@@ -1,6 +1,8 @@
+use std::time::{Instant};
 use crate::utils;
 
 pub fn puzzle1() {
+    let start = Instant::now();
     println!("Day 2, puzzle 1");
 
     let input = utils::file::read_input("src/day2/input.txt");
@@ -23,9 +25,11 @@ pub fn puzzle1() {
     }
 
     println!("horizontal * depth = {}", horizontal * depth);
+    println!("Time elapsed: {:?}", start.elapsed());
 }
 
 pub fn puzzle2() {
+    let start = Instant::now();
     println!("Day 2, puzzle 2");
 
     let input = utils::file::read_input("src/day2/input.txt");
@@ -52,4 +56,5 @@ pub fn puzzle2() {
     }
 
     println!("horizontal * depth = {}", horizontal * depth);
+    println!("Time elapsed: {:?}", start.elapsed());
 }
