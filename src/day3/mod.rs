@@ -1,5 +1,5 @@
-use std::time::{Instant};
 use std::collections::LinkedList;
+use std::time::Instant;
 
 use crate::utils;
 
@@ -19,7 +19,7 @@ pub fn puzzle1() {
         let line = lines[i];
         for j in 0..bit_length {
             let ch = line.chars().nth(j).unwrap();
-            if  ch == '1' {
+            if ch == '1' {
                 array[j] += 1;
             }
         }
@@ -27,8 +27,8 @@ pub fn puzzle1() {
 
     let half = length as u32 / 2;
 
-    let mut gamma:u32 = 0;
-    let mut epsilon:u32 = 0;
+    let mut gamma: u32 = 0;
+    let mut epsilon: u32 = 0;
 
     for i in 0..bit_length {
         // println!("{}", array[i]);
@@ -50,8 +50,7 @@ pub fn puzzle1() {
     println!("Time elapsed: {:?}", start.elapsed());
 }
 
-
-fn puzzle2_calc_low_height(shift: usize, list: &LinkedList<u32>, more: bool)-> u32 {
+fn puzzle2_calc_low_height(shift: usize, list: &LinkedList<u32>, more: bool) -> u32 {
     let mut set: LinkedList<u32> = LinkedList::new();
     let mut unset: LinkedList<u32> = LinkedList::new();
     for element in list.iter() {
@@ -67,9 +66,17 @@ fn puzzle2_calc_low_height(shift: usize, list: &LinkedList<u32>, more: bool)-> u
     let len_unset = unset.len();
 
     if more {
-        new_list = if len_set > len_unset || len_set == len_unset { set } else { unset };
+        new_list = if len_set > len_unset || len_set == len_unset {
+            set
+        } else {
+            unset
+        };
     } else {
-        new_list = if len_set > len_unset || len_set == len_unset { unset } else { set };
+        new_list = if len_set > len_unset || len_set == len_unset {
+            unset
+        } else {
+            set
+        };
     }
 
     if new_list.len() == 1 {
@@ -94,12 +101,15 @@ pub fn puzzle2() {
         number_list.push_back(num);
     });
 
-    let o2_generator_rating = puzzle2_calc_low_height(bit_length-1, &number_list, true);
-    let co2_scrubber_rating = puzzle2_calc_low_height(bit_length-1, &number_list, false);
+    let o2_generator_rating = puzzle2_calc_low_height(bit_length - 1, &number_list, true);
+    let co2_scrubber_rating = puzzle2_calc_low_height(bit_length - 1, &number_list, false);
 
     // println!("oxygen generator rating: {}", o2_generator_rating);
     // println!("CO2 scrubber rating: {}", co2_scrubber_rating);
 
-    println!("oxygen generator rating * CO2 scrubber rating: {}", o2_generator_rating * co2_scrubber_rating);
+    println!(
+        "oxygen generator rating * CO2 scrubber rating: {}",
+        o2_generator_rating * co2_scrubber_rating
+    );
     println!("Time elapsed: {:?}", start.elapsed());
 }

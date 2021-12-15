@@ -1,5 +1,5 @@
-use std::time::{Instant};
 use crate::utils;
+use std::time::Instant;
 
 pub fn puzzle1() {
     let start = Instant::now();
@@ -12,7 +12,7 @@ pub fn puzzle1() {
     let mut horizontal = 0;
 
     for n in 0..commands.len() {
-        let command: Vec<&str>  = commands[n].split(" ").collect();
+        let command: Vec<&str> = commands[n].split(" ").collect();
         let direction = command[0];
         let distance = command[1].parse::<i32>().unwrap();
 
@@ -40,7 +40,7 @@ pub fn puzzle2() {
     let mut aim = 0;
 
     for n in 0..commands.len() {
-        let command: Vec<&str>  = commands[n].split(" ").collect();
+        let command: Vec<&str> = commands[n].split(" ").collect();
         let direction = command[0];
         let distance = command[1].parse::<i32>().unwrap();
 
@@ -48,7 +48,7 @@ pub fn puzzle2() {
             "forward" => {
                 horizontal += distance;
                 depth += aim * distance;
-            },
+            }
             "down" => aim += distance,
             "up" => aim -= distance,
             _ => panic!("Unknown direction"),

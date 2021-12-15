@@ -1,5 +1,5 @@
-use std::time::{Instant};
 use crate::utils;
+use std::time::Instant;
 
 pub fn puzzle1() {
     let start = Instant::now();
@@ -11,10 +11,8 @@ pub fn puzzle1() {
     let mut increases = 0;
 
     for n in 1..string_array.len() {
-
         let current = string_array[n].parse::<i32>().unwrap();
-        let prev = string_array[n-1].parse::<i32>().unwrap();
-        
+        let prev = string_array[n - 1].parse::<i32>().unwrap();
         if current > prev {
             increases += 1;
         }
@@ -33,12 +31,11 @@ pub fn puzzle2() {
     let mut increases = 0;
     let mut sum = 0;
 
-    for n in 0..string_array.len()-2 {
+    for n in 0..string_array.len() - 2 {
         let first = string_array[n].parse::<i32>().unwrap();
-        let second = string_array[n+1].parse::<i32>().unwrap();
-        let third = string_array[n+2].parse::<i32>().unwrap();
+        let second = string_array[n + 1].parse::<i32>().unwrap();
+        let third = string_array[n + 2].parse::<i32>().unwrap();
 
-        
         let current_sum = first + second + third;
         if n > 0 {
             if current_sum > sum {
