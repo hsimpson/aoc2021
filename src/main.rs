@@ -5,6 +5,7 @@ mod utils {
 mod day1;
 mod day2;
 mod day3;
+mod day4;
 
 fn main() {
     println!("");
@@ -18,4 +19,8 @@ fn main() {
     println!("");
     day3::puzzle1();
     day3::puzzle2();
+
+    println!("");
+    day4::puzzle1();
+    day4::puzzle2();
 }
