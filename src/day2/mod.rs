@@ -6,7 +6,7 @@ pub fn puzzle1() {
     println!("Day 2, puzzle 1");
 
     let input = utils::file::read_input("src/day2/input.txt");
-    let commands: Vec<&str> = input.split("\n").collect();
+    let commands = input.lines().collect::<Vec<&str>>();
 
     let mut depth = 0;
     let mut horizontal = 0;
@@ -33,7 +33,7 @@ pub fn puzzle2() {
     println!("Day 2, puzzle 2");
 
     let input = utils::file::read_input("src/day2/input.txt");
-    let commands: Vec<&str> = input.split("\n").collect();
+    let commands = input.lines().collect::<Vec<&str>>();
 
     let mut depth = 0;
     let mut horizontal = 0;

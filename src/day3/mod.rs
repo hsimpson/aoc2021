@@ -8,7 +8,7 @@ pub fn puzzle1() {
     println!("Day 3, puzzle 1");
 
     let input = utils::file::read_input("src/day3/input.txt");
-    let lines: Vec<&str> = input.lines().collect();
+    let lines = input.lines().collect::<Vec<&str>>();
 
     let bit_length: usize = lines[0].len();
 
@@ -91,7 +91,8 @@ pub fn puzzle2() {
     println!("Day 3, puzzle 2");
 
     let input = utils::file::read_input("src/day3/input.txt");
-    let lines: Vec<&str> = input.lines().collect();
+    let lines = input.lines().collect::<Vec<&str>>();
+
     let bit_length: usize = lines[0].len();
 
     let mut number_list: LinkedList<u32> = LinkedList::new();
