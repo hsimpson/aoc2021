@@ -143,6 +143,4 @@ pub fn puzzle2() {
     }
     println!("Covered points: {}", covered_points);
     println!("Time elapsed: {:?}", start.elapsed());
-
-    println!("Time elapsed: {:?}", start.elapsed());
 }
