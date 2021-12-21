@@ -59,5 +59,9 @@ fn main() {
     day10::puzzle2();
 
     println!("");
+    day11::puzzle1();
+    day11::puzzle2();
+
+    println!("");
     println!("Time elapsed overall: {:?}", start.elapsed());
 }
