@@ -5,7 +5,7 @@ pub fn puzzle1() {
     let start = Instant::now();
     println!("Day 1, puzzle 1");
 
-    let input = utils::file::read_input("src/day1/input.txt");
+    let input = utils::file::read_input("src/day01/input.txt");
     let string_array = input.lines().collect::<Vec<&str>>();
 
     let mut increases = 0;
@@ -25,7 +25,7 @@ pub fn puzzle2() {
     let start = Instant::now();
     println!("Day 1, puzzle 2");
 
-    let input = utils::file::read_input("src/day1/input.txt");
+    let input = utils::file::read_input("src/day01/input.txt");
     let string_array = input.lines().collect::<Vec<&str>>();
 
     let mut increases = 0;

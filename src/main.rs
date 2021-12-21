@@ -1,56 +1,63 @@
+use std::time::Instant;
 mod utils {
     pub mod file;
 }
 
-mod day1;
+mod day01;
+mod day02;
+mod day03;
+mod day04;
+mod day05;
+mod day06;
+mod day07;
+mod day08;
+mod day09;
 mod day10;
-mod day2;
-mod day3;
-mod day4;
-mod day5;
-mod day6;
-mod day7;
-mod day8;
-mod day9;
+mod day11;
 
 fn main() {
     println!("");
-    day1::puzzle1();
-    day1::puzzle2();
+    println!("Advent of Code 2021");
+    let start = Instant::now();
+    day01::puzzle1();
+    day01::puzzle2();
 
     println!("");
-    day2::puzzle1();
-    day2::puzzle2();
+    day02::puzzle1();
+    day02::puzzle2();
 
     println!("");
-    day3::puzzle1();
-    day3::puzzle2();
+    day03::puzzle1();
+    day03::puzzle2();
 
     println!("");
-    day4::puzzle1();
-    day4::puzzle2();
+    day04::puzzle1();
+    day04::puzzle2();
 
     println!("");
-    day5::puzzle1();
-    day5::puzzle2();
+    day05::puzzle1();
+    day05::puzzle2();
 
     println!("");
-    day6::puzzle1();
-    day6::puzzle2();
+    day06::puzzle1();
+    day06::puzzle2();
 
     println!("");
-    day7::puzzle1();
-    day7::puzzle2();
+    day07::puzzle1();
+    day07::puzzle2();
 
     println!("");
-    day8::puzzle1();
-    day8::puzzle2();
+    day08::puzzle1();
+    day08::puzzle2();
 
     println!("");
-    day9::puzzle1();
-    day9::puzzle2();
+    day09::puzzle1();
+    day09::puzzle2();
 
     println!("");
     day10::puzzle1();
     day10::puzzle2();
+
+    println!("");
+    println!("Time elapsed overall: {:?}", start.elapsed());
 }

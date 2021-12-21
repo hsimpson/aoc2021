@@ -145,7 +145,7 @@ fn create_basins(low_points: &Vec<Point>, grid: &mut Grid) -> Vec<Basin> {
 pub fn puzzle1() {
     println!("Day 9, puzzle 1");
     let start = Instant::now();
-    let input = utils::file::read_input("src/day9/input.txt");
+    let input = utils::file::read_input("src/day09/input.txt");
     let lines: Vec<String> = input.lines().map(|s| s.to_string()).collect();
     let grid = build_grid(&lines);
 
@@ -162,7 +162,7 @@ pub fn puzzle1() {
 pub fn puzzle2() {
     println!("Day 9, puzzle 2");
     let start = Instant::now();
-    let input = utils::file::read_input("src/day9/input.txt");
+    let input = utils::file::read_input("src/day09/input.txt");
     let lines: Vec<String> = input.lines().map(|s| s.to_string()).collect();
     let mut grid = build_grid(&lines);
 

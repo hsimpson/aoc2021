@@ -111,7 +111,7 @@ pub fn puzzle1() {
     let start = Instant::now();
     println!("Day 4, puzzle 1");
 
-    let input = utils::file::read_input("src/day4/input.txt");
+    let input = utils::file::read_input("src/day04/input.txt");
     let lines: Vec<&str> = input.lines().collect();
 
     let test_numbers = lines[0]
@@ -167,7 +167,7 @@ pub fn puzzle2() {
     let start = Instant::now();
     println!("Day 4, puzzle 2");
 
-    let input = utils::file::read_input("src/day4/input.txt");
+    let input = utils::file::read_input("src/day04/input.txt");
     let lines: Vec<&str> = input.lines().collect();
 
     let test_numbers = lines[0]

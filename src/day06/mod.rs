@@ -20,7 +20,7 @@ fn simulate(lanternfishes: &mut Vec<u64>) {
 
 fn run(days: u32) {
     let start = Instant::now();
-    let input = utils::file::read_input("src/day6/input.txt");
+    let input = utils::file::read_input("src/day06/input.txt");
     let lanternfishes_initial: Vec<u8> =
         input.split(',').map(|x| x.parse::<u8>().unwrap()).collect();
 

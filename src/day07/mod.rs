@@ -5,7 +5,7 @@ use crate::utils;
 pub fn puzzle1() {
     println!("Day 7, puzzle 1");
     let start = Instant::now();
-    let input = utils::file::read_input("src/day7/input.txt");
+    let input = utils::file::read_input("src/day07/input.txt");
     let mut horizontal_postions: Vec<u32> = input
         .split(',')
         .map(|x| x.parse::<u32>().unwrap())
@@ -30,7 +30,7 @@ pub fn puzzle1() {
 pub fn puzzle2() {
     println!("Day 7, puzzle 2");
     let start = Instant::now();
-    let input = utils::file::read_input("src/day7/input.txt");
+    let input = utils::file::read_input("src/day07/input.txt");
     let horizontal_postions: Vec<u32> = input
         .split(',')
         .map(|x| x.parse::<u32>().unwrap())
