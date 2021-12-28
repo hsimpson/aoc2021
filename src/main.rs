@@ -16,6 +16,7 @@ mod day10;
 mod day11;
 mod day13;
 mod day16;
+mod day17;
 
 fn main() {
     println!("");
@@ -71,6 +72,10 @@ fn main() {
     println!("");
     day16::puzzle1();
     day16::puzzle2();
+
+    println!("");
+    day17::puzzle1();
+    day17::puzzle2();
 
     println!("");
     println!("Time elapsed overall: {:?}", start.elapsed());
