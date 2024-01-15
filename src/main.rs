@@ -14,9 +14,13 @@ mod day08;
 mod day09;
 mod day10;
 mod day11;
-mod day13;
-mod day16;
-mod day17;
+mod day12;
+// mod day13;
+// mod day14;
+// mod day15;
+// mod day16;
+// mod day17;
+// mod day18;
 
 fn main() {
     println!("");
@@ -66,16 +70,32 @@ fn main() {
     day11::puzzle2();
 
     println!("");
-    day13::puzzle1();
-    day13::puzzle2();
+    day12::puzzle1();
+    day12::puzzle2();
 
-    println!("");
-    day16::puzzle1();
-    day16::puzzle2();
+    // println!("");
+    // day13::puzzle1();
+    // day13::puzzle2();
 
-    println!("");
-    day17::puzzle1();
-    day17::puzzle2();
+    // println!("");
+    // day14::puzzle1();
+    // // day14::puzzle2();
+
+    // println!("");
+    // day15::puzzle1();
+    // //day15::puzzle2();
+
+    // println!("");
+    // day16::puzzle1();
+    // day16::puzzle2();
+
+    // println!("");
+    // day17::puzzle1();
+    // day17::puzzle2();
+
+    // println!("");
+    // day18::puzzle1();
+    // day18::puzzle2();
 
     println!("");
     println!("Time elapsed overall: {:?}", start.elapsed());
